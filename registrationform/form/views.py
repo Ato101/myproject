@@ -23,7 +23,7 @@ def index(request):
                 user.save();
                 return redirect('login')
         else:
-            messages.info(request,'password is the same')
+            messages.info(request,'password is not same')
     else:
         return render(request,'index.html')
 
